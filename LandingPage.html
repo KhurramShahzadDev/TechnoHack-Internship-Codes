@@ -3,13 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            border: 2px 0px solid red;
+        }
+
+        .content {
+            min-height: calc(100vh - 100px); /* Adjust based on your footer height */
+            position: relative;
+        }
+
+        .form {
+            border: 2px solid red;
+            width: 40%;
+            background-color: azure;
+            margin-top: 40px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .label,
+        .input {
+            padding: 12px;
+            margin: 12px;
+            line-height: 40px;
+            display: inline-block;
+        }
+
+        .input input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .sign-up-button {
+            padding: 12px;
+          
+            line-height: 40px;
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .video-section {
+            width: 40%;
+            float: left;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            margin-top:45px;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <p>code is here too</p>
-    <h3>Will write the code</h3>
-    <h2>This is a new line</h2>
-    <h3>what if i do any changes here</h3>
+    <header>  
+        <img src="clothes.jpg" alt="A logo of demo picture" height="40px" width="30px">
+    </header>
     
+    <h2>Watch a Demo about our product and then buy the Products</h2>
+    <hr color="black" height="12px">
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Form Section -->
+        <div class="form">
+            <form action="">
+                <div class="label">
+                    <label for="firstname">First name</label><br>
+                    <label for="lastname">Last name</label><br>
+                    <label for="password">Password</label><br>
+                    <label for="confirmpassword">Confirm Password</label><br>
+                    <label for="phone">Phone Number</label><br>
+                </div>
+                <div class="input">
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                </div>
+                <button type="submit" class="sign-up-button">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <video controls>
+                <source src="https://www.youtube.com/watch?v=7fjOw8ApZ1I" type="video/mp4"> <!-- Replace with your actual video URL -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>All rights are reserved.</p>
+        <p>TechnoHack Internship</p>
+    </footer>
 </body>
 </html>
